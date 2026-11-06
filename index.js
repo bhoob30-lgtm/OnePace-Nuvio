@@ -25,6 +25,9 @@ const POSTER = process.env.POSTER_URL || `https://images.metahub.space/poster/me
 const BACKGROUND = process.env.BACKGROUND_URL || `https://images.metahub.space/background/medium/${IMDB_ID}/img`;
 const LOGO = process.env.LOGO_URL || `https://images.metahub.space/logo/medium/${IMDB_ID}/img`;
 
+// Per usare un fotogramma del video come miniatura invece della copertina dell'arco: THUMBNAILS=video
+const USE_VIDEO_FRAMES = process.env.THUMBNAILS === "video";
+
 const cache = { at: 0, data: null, pending: null };
 
 async function fetchList(listId) {
@@ -70,7 +73,9 @@ async function loadArc(arc, season) {
     const custom = arc.titles && arc.titles[ep - 1]; // titolo facoltativo da arcs.json
     const num = String(ep).padStart(2, "0");
     // copertina: quella dell'arco se impostata, altrimenti un fotogramma del video da Pixeldrain
-    const thumbnail = arc.thumbnail || `${PIXELDRAIN}/api/file/${groups[ep][0].id}/thumbnail`;
+    const thumbnail = arc.thumbnail || (USE_VIDEO_FRAMES
+      ? `${PIXELDRAIN}/api/file/${groups[ep][0].id}/thumbnail`
+      : `/covers/${String(season).padStart(2, "0")}.jpg`); // copertina dell'arco (file in public/covers)
     videos.push({
       id: vid, season, episode: ep,
       title: custom ? `${num}. ${custom}` : `${arc.name} ${num}`,
@@ -108,7 +113,7 @@ const metaBase = () => ({
 });
 
 // Ritorna l'oggetto JSON per un path Stremio, oppure null se non esiste
-async function handle(pathname) {
+async function handle(pathname, base) {
   const parts = decodeURIComponent(pathname).split("/").filter(Boolean);
   if (parts[0] === "manifest.json") return manifest;
   const [resource, , rest] = parts;
@@ -116,7 +121,8 @@ async function handle(pathname) {
   if (resource === "catalog") return { metas: [metaBase()] };
   if (resource === "meta" && id === SERIES_ID) {
     const { videos } = await buildData();
-    return { meta: { ...metaBase(), videos } };
+    const abs = (u) => (u && u.startsWith("/") ? base + u : u);
+    return { meta: { ...metaBase(), videos: videos.map((v) => ({ ...v, thumbnail: abs(v.thumbnail) })) } };
   }
   if (resource === "stream") {
     const { byId } = await buildData();
@@ -146,7 +152,9 @@ async function respond(req, res) {
   }
   res.setHeader("Content-Type", "application/json");
   try {
-    const out = await handle(pathname);
+    const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+    const proto = req.headers["x-forwarded-proto"] || (host.startsWith("localhost") ? "http" : "https");
+    const out = await handle(pathname, `${proto}://${host}`);
     if (!out) { res.statusCode = 404; return res.end(JSON.stringify({ error: "not found" })); }
     res.end(JSON.stringify(out));
   } catch (e) {
