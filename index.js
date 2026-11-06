@@ -18,6 +18,13 @@ const manifest = {
   behaviorHints: { configurable: false },
 };
 
+// Immagini della serie. Puoi sostituirle con qualsiasi URL diretto a un'immagine
+// (oppure impostare le variabili d'ambiente POSTER_URL, BACKGROUND_URL, LOGO_URL).
+const IMDB_ID = "tt0388629"; // One Piece, usato solo per prendere le immagini
+const POSTER = process.env.POSTER_URL || `https://images.metahub.space/poster/medium/${IMDB_ID}/img`;
+const BACKGROUND = process.env.BACKGROUND_URL || `https://images.metahub.space/background/medium/${IMDB_ID}/img`;
+const LOGO = process.env.LOGO_URL || `https://images.metahub.space/logo/medium/${IMDB_ID}/img`;
+
 const cache = { at: 0, data: null, pending: null };
 
 async function fetchList(listId) {
@@ -60,9 +67,15 @@ async function loadArc(arc, season) {
   const byId = {};
   Object.keys(groups).map(Number).sort((a, b) => a - b).forEach((ep) => {
     const vid = `${SERIES_ID}:${season}:${ep}`;
+    const custom = arc.titles && arc.titles[ep - 1]; // titolo facoltativo da arcs.json
+    const num = String(ep).padStart(2, "0");
+    // copertina: quella dell'arco se impostata, altrimenti un fotogramma del video da Pixeldrain
+    const thumbnail = arc.thumbnail || `${PIXELDRAIN}/api/file/${groups[ep][0].id}/thumbnail`;
     videos.push({
       id: vid, season, episode: ep,
-      title: `${arc.name} ${String(ep).padStart(2, "0")}`,
+      title: custom ? `${num}. ${custom}` : `${arc.name} ${num}`,
+      overview: arc.name,
+      thumbnail,
       released: new Date(Date.UTC(2013, 0, 1, 0, 0, season * 60 + ep)).toISOString(),
     });
     byId[vid] = groups[ep];
@@ -87,7 +100,9 @@ const metaBase = () => ({
   id: SERIES_ID,
   type: "series",
   name: "One Pace",
-  poster: "https://onepace.net/favicon.ico",
+  poster: POSTER,
+  background: BACKGROUND,
+  logo: LOGO,
   description: "Il progetto fan One Pace: One Piece con il ritmo del manga.",
   genres: ["Anime", "Avventura"],
 });
