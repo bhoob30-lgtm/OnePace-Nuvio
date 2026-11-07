@@ -4,7 +4,8 @@ const ARCS = require("./arcs.json");
 
 const PIXELDRAIN = process.env.PIXELDRAIN_URL || "https://pixeldrain.com";
 const CACHE_MS = 60 * 60 * 1000; // 1 ora
-const SERIES_ID = "onepace";
+// ID della serie. Per provare l'aggancio a TMDB (locandine delle stagioni in Nuvio) imposta SERIES_ID=tmdb:318774
+const SERIES_ID = process.env.SERIES_ID || "onepace";
 
 const manifest = {
   id: "community.onepace.direct",
@@ -79,9 +80,11 @@ async function loadArc(arc, season) {
       : `/covers/${String(season).padStart(2, "0")}.jpg`); // copertina dell'arco (file in public/covers)
     videos.push({
       id: vid, season, episode: ep,
-      title: custom ? `${num}. ${custom}` : `${arc.name} ${num}`,
+      title: custom ? `${arc.name} ${num} · ${custom}` : `${arc.name} ${num}`, // l'arco è sempre nel titolo
       overview: arc.name,
       thumbnail,
+      // locandina della stagione (estensione di Nuvio): file in public/posters, oppure "seasonPoster" in arcs.json
+      seasonPoster: arc.seasonPoster || `/posters/${String(season).padStart(2, "0")}.jpg`,
       released: new Date(Date.UTC(2013, 0, 1, 0, 0, season * 60 + ep)).toISOString(),
     });
     byId[vid] = groups[ep];
@@ -123,7 +126,7 @@ async function handle(pathname, base) {
   if (resource === "meta" && id === SERIES_ID) {
     const { videos } = await buildData();
     const abs = (u) => (u && u.startsWith("/") ? base + u : u);
-    return { meta: { ...metaBase(), videos: videos.map((v) => ({ ...v, thumbnail: abs(v.thumbnail) })) } };
+    return { meta: { ...metaBase(), videos: videos.map((v) => ({ ...v, thumbnail: abs(v.thumbnail), seasonPoster: abs(v.seasonPoster) })) } };
   }
   if (resource === "stream") {
     const { byId } = await buildData();
