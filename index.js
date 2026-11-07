@@ -80,7 +80,7 @@ async function loadArc(arc, season) {
       : `/covers/${String(season).padStart(2, "0")}.jpg`); // copertina dell'arco (file in public/covers)
     videos.push({
       id: vid, season, episode: ep,
-      title: custom ? `${arc.name} ${num} · ${custom}` : `${arc.name} ${num}`, // l'arco è sempre nel titolo
+      title: custom ? `${num}. ${custom}` : `${arc.name} ${num}`, // senza titolo in arcs.json resta "Arco NN"
       overview: arc.name,
       thumbnail,
       // locandina della stagione (estensione di Nuvio): file in public/posters, oppure "seasonPoster" in arcs.json
