@@ -70,7 +70,8 @@ async function loadArc(arc, season) {
   const byId = {};
   Object.keys(groups).map(Number).sort((a, b) => a - b).forEach((ep) => {
     const vid = `${SERIES_ID}:${season}:${ep}`;
-    const custom = arc.titles && arc.titles[ep - 1]; // titolo facoltativo da arcs.json
+    // titolo facoltativo da arcs.json: oggetto { "numero episodio": "titolo" } (oppure lista in ordine)
+    const custom = arc.titles && (Array.isArray(arc.titles) ? arc.titles[ep - 1] : arc.titles[ep]);
     const num = String(ep).padStart(2, "0");
     // copertina: quella dell'arco se impostata, altrimenti un fotogramma del video da Pixeldrain
     const thumbnail = arc.thumbnail || (USE_VIDEO_FRAMES

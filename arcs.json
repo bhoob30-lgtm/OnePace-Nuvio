@@ -1,146 +1,692 @@
 [
-  {
-    "name": "Romance Dawn",
-    "listId": "LVyeVAjL"
-  },
-  {
-    "name": "Orange Town",
-    "listId": "MAwZejPC"
-  },
-  {
-    "name": "Syrup Village",
-    "listId": "bZughUL3"
-  },
-  {
-    "name": "Gaimon",
-    "listId": "34RuaDWW"
-  },
-  {
-    "name": "Baratie",
-    "listId": "DvABXt6w"
-  },
-  {
-    "name": "Arlong Park",
-    "listId": "chJ28fH8"
-  },
-  {
-    "name": "The Adventures of Buggy's Crew",
-    "listId": "gghbHuzT"
-  },
-  {
-    "name": "Loguetown",
-    "listId": "LjpLddkr"
-  },
-  {
-    "name": "Reverse Mountain",
-    "listId": "ZFrppPoX"
-  },
-  {
-    "name": "Whisky Peak",
-    "listId": "5d4WRz1y"
-  },
-  {
-    "name": "The Trials of Koby-Meppo",
-    "listId": "81KWfWcq"
-  },
-  {
-    "name": "Little Garden",
-    "listId": "NBMcTurd"
-  },
-  {
-    "name": "Drum Island",
-    "listId": "dvriV6Z9"
-  },
-  {
-    "name": "Alabasta",
-    "listId": "KX3E2PR4"
-  },
-  {
-    "name": "Jaya",
-    "listId": "P6mnmZpN"
-  },
-  {
-    "name": "Skypiea",
-    "listId": "arhxWEdj"
-  },
-  {
-    "name": "Long Ring Long Land",
-    "listId": "naP4DUTn"
-  },
-  {
-    "name": "Water Seven",
-    "listId": "o8YkGt9i"
-  },
-  {
-    "name": "Enies Lobby",
-    "listId": "Lbggw3VT"
-  },
-  {
-    "name": "Post-Enies Lobby",
-    "listId": "o54ysUTC"
-  },
-  {
-    "name": "Thriller Bark",
-    "listId": "Cq9faLGv"
-  },
-  {
-    "name": "Sabaody Archipelago",
-    "listId": "jhpKUqF8"
-  },
-  {
-    "name": "Amazon Lily",
-    "listId": "Bsr9gKsn"
-  },
-  {
-    "name": "Impel Down",
-    "listId": "y5ywnHdF"
-  },
-  {
-    "name": "If You Could Go Anywhere... The Adventures of the Straw Hats",
-    "listId": "cnjWovN9"
-  },
-  {
-    "name": "Marineford",
-    "listId": "uFuFpnpi"
-  },
-  {
-    "name": "Post-War",
-    "listId": "7EANMSA7"
-  },
-  {
-    "name": "Return to Sabaody",
-    "listId": "igysH62b"
-  },
-  {
-    "name": "Fishman Island",
-    "listId": "qXbhGcY2"
-  },
-  {
-    "name": "Punk Hazard",
-    "listId": "wJoipMZu"
-  },
-  {
-    "name": "Dressrosa",
-    "listId": "DMuj2Pqe"
-  },
-  {
-    "name": "Zou",
-    "listId": "nSkEY2Cq"
-  },
-  {
-    "name": "Whole Cake Island",
-    "listId": "phsTwRmF"
-  },
-  {
-    "name": "Reverie",
-    "listId": "RLz2BXe7"
-  },
-  {
-    "name": "Wano",
-    "listId": "pFSu2BLb"
-  },
-  {
-    "name": "Egghead",
-    "listId": "87XoYXT9"
+ {
+  "name": "Romance Dawn",
+  "listId": "LVyeVAjL",
+  "titles": {
+   "1": "ROMANCE DAWN, ~L'alba di un'avventura~",
+   "2": "Lo chiamano “Cappello di Paglia” Luffy",
+   "3": "Il Re dei Pirati e il maestro spadaccino",
+   "4": "Il primo"
   }
+ },
+ {
+  "name": "Orange Town",
+  "listId": "MAwZejPC",
+  "titles": {
+   "1": "Entra in scena: Nami",
+   "2": "Il tesoro",
+   "3": "Il pirata Buggy “il Clown”"
+  }
+ },
+ {
+  "name": "Syrup Village",
+  "listId": "bZughUL3",
+  "titles": {
+   "1": "Entra in scena: il Capitano Usopp",
+   "2": "Il Capitano Kuro",
+   "3": "La salita",
+   "4": "L'uomo silenzioso",
+   "5": "Il pirata “Kuro dai Cento Piani”",
+   "6": "Per chi suona la campana",
+   "7": "Verso il mare"
+  }
+ },
+ {
+  "name": "Gaimon",
+  "listId": "34RuaDWW",
+  "titles": {
+   "1": "Sei uno strano animale"
+  }
+ },
+ {
+  "name": "Baratie",
+  "listId": "DvABXt6w",
+  "titles": {
+   "1": "Entra in scena: Sanji",
+   "2": "Il commodoro pirata Don Krieg",
+   "3": "Il giuramento",
+   "4": "Perla",
+   "5": "Per un sogno",
+   "6": "MH5",
+   "7": "La salda lancia da guerra",
+   "8": "Il quarto"
+  }
+ },
+ {
+  "name": "Arlong Park",
+  "listId": "chJ28fH8",
+  "titles": {
+   "1": "Arlong Park",
+   "2": "I mostri della Grand Line",
+   "3": "Carte nautiche e uomini-pesce",
+   "4": "Bell-mère",
+   "5": "Vivere",
+   "6": "OK, ALZIAMOCI",
+   "7": "Cavalleria contro Karate degli Uomini-Pesce",
+   "8": "Tocca a me",
+   "9": "Il secondo",
+   "10": "Gira, girandola, gira"
+  }
+ },
+ {
+  "name": "The Adventures of Buggy's Crew",
+  "listId": "gghbHuzT",
+  "titles": {
+   "1": "Le avventure della ciurma di Buggy"
+  }
+ },
+ {
+  "name": "Loguetown",
+  "listId": "LjpLddkr",
+  "titles": {
+   "1": "Kitetsu III",
+   "2": "Luffy è morto",
+   "3": "La leggenda ha inizio"
+  }
+ },
+ {
+  "name": "Reverse Mountain",
+  "listId": "ZFrppPoX",
+  "titles": {
+   "1": "Reverse Mountain",
+   "2": "Capo Promessa"
+  }
+ },
+ {
+  "name": "Whisky Peak",
+  "listId": "5d4WRz1y",
+  "titles": {
+   "1": "La città dei festeggiamenti",
+   "2": "L'organizzazione criminale segreta"
+  }
+ },
+ {
+  "name": "The Trials of Koby-Meppo",
+  "listId": "81KWfWcq",
+  "titles": {
+   "1": "Le prove di Koby-Meppo"
+  }
+ },
+ {
+  "name": "Little Garden",
+  "listId": "NBMcTurd",
+  "titles": {
+   "1": "Avventura a Little Garden",
+   "2": "Dorry e Brogy",
+   "3": "Gioco sporco",
+   "4": "Luffy contro Mr. 3",
+   "5": "Dritti davanti a noi!!"
+  }
+ },
+ {
+  "name": "Drum Island",
+  "listId": "dvriV6Z9",
+  "titles": {
+   "1": "Wapol di Latta",
+   "2": "Avventura in un paese senza nome",
+   "3": "La vetta",
+   "4": "Entra in scena: Tony Tony Chopper",
+   "5": "La volontà ereditata",
+   "6": "Indistruttibile",
+   "7": "I cieli di Drum",
+   "8": "I ciliegi in fiore di Hiriluk"
+  }
+ },
+ {
+  "name": "Alabasta",
+  "listId": "KX3E2PR4",
+  "titles": {
+   "1": "Sir Crocodile, il pirata",
+   "2": "Approdo ad Alabasta",
+   "3": "Avventura nel Regno della Sabbia",
+   "4": "Yuba, la città dei ribelli",
+   "5": "Amo il mio paese",
+   "6": "Rainbase, la città dei sogni",
+   "7": "Si comincia",
+   "8": "Ribellione",
+   "9": "Avanti!!",
+   "10": "Resa dei conti ad Alubarna",
+   "11": "Zona Talpa Quattro",
+   "12": "Okama Kenpo",
+   "13": "Colei che controlla il tempo",
+   "14": "Tagliare l'acciaio",
+   "15": "I capi",
+   "16": "SPERANZA!!",
+   "17": "Alla Croc",
+   "18": "Ti sconfiggerò",
+   "19": "Un po' di giustizia",
+   "20": "L'avventura di Vivi",
+   "21": "Il clandestino"
+  }
+ },
+ {
+  "name": "Jaya",
+  "listId": "P6mnmZpN",
+  "titles": {
+   "1": "Perché il Log Pose è sferico",
+   "2": "Non sognare mai",
+   "3": "I sogni della gente",
+   "4": "Noland il bugiardo",
+   "5": "Mangiamo",
+   "6": "L'uomo da cento milioni",
+   "7": "La massima autorità del mondo",
+   "8": "Il Knock-Up Stream"
+  }
+ },
+ {
+  "name": "Skypiea",
+  "listId": "arhxWEdj",
+  "titles": {
+   "1": "La Porta del Cielo",
+   "2": "Angel Beach",
+   "3": "Giudizio divino",
+   "4": "La prova",
+   "5": "Avventura sull'Isola degli Dei",
+   "6": "Il villaggio nascosto tra le nuvole",
+   "7": "Ouverture",
+   "8": "Vearth",
+   "9": "Battaglia dei Dial",
+   "10": "Il pirata Luffy contro il berserker Wyper",
+   "11": "Il pirata Chopper contro il sacerdote Gedatsu",
+   "12": "La pirata Robin contro il comandante Yama",
+   "13": "Concerto",
+   "14": "Il pirata Zoro contro il sacerdote Ohm",
+   "15": "Quintetto",
+   "16": "Conis",
+   "17": "Deathpiea",
+   "18": "In prima linea per la salvezza dell'amore",
+   "19": "Ammazzadei",
+   "20": "La luce di Shandora",
+   "21": "Raigō",
+   "22": "Canzone d'amore",
+   "23": "Fantasia",
+   "24": "Ce l'ho fatta ad arrivare fin qui",
+   "25": "Finale"
+  }
+ },
+ {
+  "name": "Long Ring Long Land",
+  "listId": "naP4DUTn",
+  "titles": {
+   "0": "Senza titolo",
+   "1": "Avventura su un'isola lunga",
+   "2": "Corsa dei Donut!!",
+   "3": "Groggy Ring!!",
+   "4": "Combattimento",
+   "5": "K.O.",
+   "6": "L'ammiraglio del Quartier Generale della Marina Aokiji"
+  }
+ },
+ {
+  "name": "Water Seven",
+  "listId": "o8YkGt9i",
+  "titles": {
+   "1": "La città dell'acqua, Water Seven",
+   "2": "Mr. Iceburg",
+   "3": "Il caso del pirata rapito",
+   "4": "Stallo",
+   "5": "Luffy contro Usopp",
+   "6": "Avvertimento",
+   "7": "Voci",
+   "8": "Diavolo",
+   "9": "Cipher Pol n. 9",
+   "10": "Sei Poteri",
+   "11": "Klabautermann",
+   "12": "Il leggendario carpentiere navale",
+   "13": "Mr. Tom",
+   "14": "Bingo",
+   "15": "Partenza imminente",
+   "16": "Aqua Laguna",
+   "17": "Sogeking",
+   "18": "Ramen Kenpo",
+   "19": "L'onorevole capitano T-Bone",
+   "20": "Male necessario"
+  }
+ },
+ {
+  "name": "Enies Lobby",
+  "listId": "Lbggw3VT",
+  "titles": {
+   "1": "I superumani di Enies Lobby",
+   "2": "La grande resa dei conti sull'Isola della Giustizia!!",
+   "3": "Espresso per l'isola principale di Enies Lobby",
+   "4": "Licenziato",
+   "5": "Alzate il segnale di contrattacco",
+   "6": "Senza precedenti",
+   "7": "Gear Second",
+   "8": "La ragazza chiamata diavolo",
+   "9": "Ohara contro il Governo Mondiale",
+   "10": "Dichiarazione di guerra",
+   "11": "Tuffati nella cascata!!",
+   "12": "I pirati contro CP9",
+   "13": "Mr. Cavalleria",
+   "14": "Risposta vitale",
+   "15": "Mostro",
+   "16": "La terrificante trasmissione d'emergenza",
+   "17": "Il cacciatore",
+   "18": "Sanji contro Jabra",
+   "19": "Zoro contro Kaku",
+   "20": "Buster Call",
+   "21": "Rob Lucci",
+   "22": "La leggenda della sirena",
+   "23": "Non siamo all'inferno",
+   "24": "Sconfitta totale",
+   "25": "Una dolce nevicata del ricordo"
+  }
+ },
+ {
+  "name": "Post-Enies Lobby",
+  "listId": "o54ysUTC",
+  "titles": {
+   "1": "Il pugno dell'amore",
+   "2": "Il nome di quel mare",
+   "3": "Le mie condoglianze",
+   "4": "Perdona te stesso! Franky parte!",
+   "5": "Lo stupefacente Thousand Sunny e le lacrime di scuse di Usopp!",
+   "6": "Le taglie che girano e il duello sull'isola di Banaro!"
+  }
+ },
+ {
+  "name": "Thriller Bark",
+  "listId": "Cq9faLGv",
+  "titles": {
+   "1": "Il mare misterioso e il Brook scheletro!",
+   "2": "Avventura sull'isola fantasma e il celebre dottor Hogback!",
+   "3": "L'uomo invisibile e il segreto del palazzo!",
+   "4": "Notte dei Generali Zombie! I quattro misteriosi di Thriller Bark",
+   "5": "Il giardino delle meraviglie di Perona e la carica dei Generali Zombie!",
+   "6": "Numero 900?! L'inseguimento di Lola e lo spadaccino canterino",
+   "7": "Il temibile potere del Frutto dell'Ombra! L'ultimo Numero 900!",
+   "8": "Il risveglio di Oars e Brook contro Ryuma!",
+   "9": "Speranza e disperazione dello scheletro e il contrattacco dei Cappello di Paglia!",
+   "10": "Già negativo! La coraggiosa resistenza di Usopp!",
+   "11": "Un sogno rubato! Sanji contro Absalom",
+   "12": "Il terrore di Perona! Usopp contro la Principessa Fantasma!",
+   "13": "Zoro contro Ryuuma e la rabbia di Chopper!",
+   "14": "Fatevi avanti, Pirati di Cappello di Paglia! Il disperato contrattacco della ciurma!",
+   "15": "Scontro! La titanica battaglia contro Zombie 900!",
+   "16": "Il misterioso visitatore! L'incontro tra due Corsari!",
+   "17": "Mente e muscoli insieme! Oars e Moriah contro i Cappello di Paglia!",
+   "18": "L'annientamento della ciurma! Oars contro Luffy Incubo",
+   "19": "Arriva il mattino! L'attacco finale dei Cappello di Paglia!",
+   "20": "Il potere che può deviare qualsiasi cosa?! Zoro combatte pronto a morire!",
+   "21": "Il passato di Brook! I Pirati Rumbar e Laboon!",
+   "22": "La promessa di Brook! L'ottavo membro"
+  }
+ },
+ {
+  "name": "Sabaody Archipelago",
+  "listId": "jhpKUqF8",
+  "titles": {
+   "1": "I cavalieri dei pesci volanti",
+   "2": "Duval Maschera di Ferro",
+   "3": "La tragedia di Duval",
+   "4": "Avventura sull'arcipelago delle bolle di sapone danzanti",
+   "5": "Le braci della storia",
+   "6": "L'incidente alla casa d'aste",
+   "7": "Un'isola nel caos",
+   "8": "Roger e Rayleigh",
+   "9": "Arriva Kizaru",
+   "10": "Kizaru contro i quattro capitani",
+   "11": "Non sono riuscito a salvarli!!!"
+  }
+ },
+ {
+  "name": "Amazon Lily",
+  "listId": "Bsr9gKsn",
+  "titles": {
+   "1": "Avventura sull'Isola delle Donne",
+   "2": "L'Imperatrice Pirata Boa Hancock",
+   "3": "L'arena",
+   "4": "La confessione di Hancock",
+   "5": "Nessuno può più fermarlo"
+  }
+ },
+ {
+  "name": "Impel Down",
+  "listId": "y5ywnHdF",
+  "titles": {
+   "1": "La prigione sottomarina, Impel Down",
+   "2": "Il primogenito del mare",
+   "3": "Da un inferno all'altro",
+   "4": "Inferno Hell",
+   "5": "Amico",
+   "6": "Un raggio di speranza",
+   "7": "Inferno infinito",
+   "8": "Ancora un altro incidente epico",
+   "9": "Verso il sole e la libertà",
+   "10": "Grazie"
+  }
+ },
+ {
+  "name": "If You Could Go Anywhere... The Adventures of the Straw Hats",
+  "listId": "cnjWovN9",
+  "titles": {
+   "1": "Se potessi andare ovunque... Le avventure dei Cappello di Paglia"
+  }
+ },
+ {
+  "name": "Marineford",
+  "listId": "uFuFpnpi",
+  "titles": {
+   "1": "Quartier Generale della Marina",
+   "2": "Ace e Barbabianca",
+   "3": "Conflitto al vertice",
+   "4": "La giustizia prevarrà!!",
+   "5": "Luffy e Barbabianca",
+   "6": "I prigionieri di Impel Down",
+   "7": "Il ragno vorticoso",
+   "8": "L'uomo che scosse il mondo",
+   "9": "Assalto",
+   "10": "Piazza Oris",
+   "11": "Il mostro bianco",
+   "12": "La piattaforma dell'esecuzione",
+   "13": "I tempi stanno cambiando",
+   "14": "Grazie per avermi amato",
+   "15": "Edward Newgate",
+   "16": "Un dono a una nuova era",
+   "17": "La conclusione della guerra"
+  }
+ },
+ {
+  "name": "Post-War",
+  "listId": "7EANMSA7",
+  "titles": {
+   "1": "Futuro strisciante",
+   "2": "Terminal Grigio",
+   "3": "Giuramento di fratellanza",
+   "4": "Il mare di Sabo",
+   "5": "La volontà dei venti",
+   "6": "Incoraggiamento",
+   "7": "NEWS",
+   "8": "3D2Y"
+  }
+ },
+ {
+  "name": "Return to Sabaody",
+  "listId": "igysH62b",
+  "titles": {
+   "1": "Due anni dopo",
+   "2": "L'isola dei nuovi inizi",
+   "3": "Tuffo, tuffo, tuffo!"
+  }
+ },
+ {
+  "name": "Fishman Island",
+  "listId": "qXbhGcY2",
+  "titles": {
+   "1": "Verso gli abissi",
+   "2": "Avventura negli abissi",
+   "3": "Sbarco sull'Isola degli Uomini-Pesce! La Baia delle Sirene e Gyoverly Hills!",
+   "4": "Arrivo a Coral Hill! L'emorragia nasale e la devastante profezia!",
+   "5": "Il re dell'Isola degli Uomini-Pesce invita al Palazzo Ryugu!",
+   "6": "La principessa sirena della Torre di Guscio! Shirahoshi della famiglia Nettuno!",
+   "7": "L'incidente del rapimento di Shirahoshi e la maledizione del Mato Mato!",
+   "8": "L'inizio del piano di vendetta! Zoro contro Hody!",
+   "9": "Alla Foresta del Mare! Arlong e Hody",
+   "10": "Otohime, Fisher Tiger e i Pirati del Sole! L'incontro fatale!",
+   "11": "La sconvolgente verità su Tiger! La fine dei Pirati del Sole",
+   "12": "Il Drago Celeste naufragato! Un proiettile che sigilla il futuro",
+   "13": "Il regno trema! Luffy contro Jinbe!",
+   "14": "Raduno a Piazza Gyoncorde! Il vero potere della droga malvagia",
+   "15": "Il lato oscuro di Hody! L'arrivo dei Cappello di Paglia",
+   "16": "100.000 contro 10! Le mosse esplosive dei Cappello di Paglia",
+   "17": "Il generale della Terra del Futuro e la crisi della distruzione dell'Isola degli Uomini-Pesce",
+   "18": "Proteggerò tutto",
+   "19": "Cosa sei?",
+   "20": "Fantasma",
+   "21": "Anche la morte è vendetta",
+   "22": "La via verso il sole",
+   "23": "La voce dal Nuovo Mondo",
+   "24": "Il cappello dell'eroe"
+  }
+ },
+ {
+  "name": "Punk Hazard",
+  "listId": "wJoipMZu",
+  "titles": {
+   "1": "Punk Hazard",
+   "2": "Avventura sull'isola in fiamme",
+   "3": "Sul mio busto",
+   "4": "Il lago dei banditi",
+   "5": "CC",
+   "6": "I fratelli Yeti Cool",
+   "7": "Alleanza tra pirati",
+   "8": "Bufera con probabilità di slime",
+   "9": "Il mio nome è Kin'emon!!",
+   "10": "Vergo e Joker! L'inizio del piano di Caesar!",
+   "11": "L'esperimento ha inizio! Shinokuni scatenato!",
+   "12": "Inizia il contrattacco!",
+   "13": "Il sacrificio del G-5 e il tradimento del vice ammiraglio!",
+   "14": "La mente nell'ombra e la battaglia tra gas e gomma!",
+   "15": "Vice ammiraglio contro vice ammiraglio e la verità sulla distruzione di Punk Hazard!",
+   "16": "Il drago di nome Momonosuke e il minaccioso utilizzatore del Frutto della Neve!",
+   "17": "Il più forte stile a una spada di Zoro e la difficile situazione di Mocha!",
+   "18": "L'attacco totale di Luffy e Law! La presa della nuova era!",
+   "19": "Il fortissimo Grizzly Magnum e gli assassini di Dressrosa!",
+   "20": "Muori per me! L'uomo pericoloso entra in azione!",
+   "21": "Il bersaglio dell'alleanza e la partenza!",
+   "22": "L'arrivo dell'uomo misterioso e il News Coo!"
+  }
+ },
+ {
+  "name": "Dressrosa",
+  "listId": "DMuj2Pqe",
+  "titles": {
+   "1": "Arrivo a Dressrosa! Il paese della passione, dell'amore e dei giocattoli!",
+   "2": "Colosseo Corrida! Il grande torneo",
+   "3": "Il Colosseo dei nuovi volti e Maynard l'inseguitore!",
+   "4": "Il cambio di motivazioni di Bellamy e l'inizio del Blocco B!",
+   "5": "Blocco B in fiamme! Concorrenti stravaganti e King Punch!",
+   "6": "Verso Green Bit! L'avventura nella terra dei nani!",
+   "7": "Arriva Doflamingo! Il sommo stratega!",
+   "8": "Blocco C combattuto! Lucy e Ucy!",
+   "9": "La battaglia infuocata del Blocco C e i dimenticati di Dressrosa!",
+   "10": "La ribellione dei Tontatta e il finale del Blocco C",
+   "11": "Un triste passato! Rebecca e il Signor Soldato",
+   "12": "L'inizio infuocato del Blocco D e la rivelazione del Demone Celeste",
+   "13": "La nuova strategia di Law e l'incubo sotterraneo del Colosseo",
+   "14": "La sorte del clan Riku! L'eroe in agguato attende nell'ombra!",
+   "15": "L'inseguimento implacabile di Doflamingo",
+   "16": "Strategia SOP",
+   "17": "Il mondo sotterraneo",
+   "18": "Il punto di vista di Fujitora",
+   "19": "Diamante e Pica",
+   "20": "Capitano",
+   "21": "Usoland il bugiardo",
+   "22": "Dressrosa nel caos",
+   "23": "Gabbia per uccelli",
+   "24": "L'ufficiale esecutivo Pica",
+   "25": "Avanti!! L'esercito dei furfanti",
+   "26": "Lo stato della guerra",
+   "27": "Battaglia",
+   "28": "Un mondo da uomini",
+   "29": "L'asso nella manica",
+   "30": "Piano segreto",
+   "31": "Il Frutto dell'Operazione",
+   "32": "Città Bianca",
+   "33": "L'isola del destino: Minion",
+   "34": "Cora",
+   "35": "Bellamy il pirata",
+   "36": "La lancia di Elbaf e Don Sai",
+   "37": "Cabbage e Lomeo",
+   "38": "Dalla Russia con amore",
+   "39": "Zoro contro Pica",
+   "40": "La maledizione del Cuore",
+   "41": "Mi stai intralciando",
+   "42": "Gear Fourth",
+   "43": "Gatz",
+   "44": "Cielo e terra",
+   "45": "Prostrazione",
+   "46": "L'avventura di Sabo",
+   "47": "La convinzione del soldato",
+   "48": "Padre e figli"
+  }
+ },
+ {
+  "name": "Zou",
+  "listId": "nSkEY2Cq",
+  "titles": {
+   "1": "Zou",
+   "2": "La tribù dei Mink",
+   "3": "Alla Fortezza del Fianco Destro",
+   "4": "Il Duca Inuarashi e il Maestro Nekomamushi",
+   "5": "Arrivano i Pirati Cappello Riccio",
+   "6": "Invito al tè",
+   "7": "Andiamo a vedere il Maestro Nekomamushi",
+   "8": "Raizo della Nebbia",
+   "9": "Momonosuke, erede del clan Kozuki",
+   "10": "Capito"
+  }
+ },
+ {
+  "name": "Whole Cake Island",
+  "listId": "phsTwRmF",
+  "titles": {
+   "1": "Un mondo in fermento",
+   "2": "0 e 4",
+   "3": "Totto Land",
+   "4": "L'Imperatrice Pirata, Charlotte Linlin",
+   "5": "Avventura nella foresta misteriosa",
+   "6": "Vinsmoke Judge",
+   "7": "La Vivre Card di Lola",
+   "8": "Luffy contro il comandante Cracker",
+   "9": "La maschera di ferro",
+   "10": "Verso l'East Blue",
+   "11": "Luffy contro Sanji",
+   "12": "Forze della rabbia",
+   "13": "Luffy e Big Mom",
+   "14": "Un raggio di luce",
+   "15": "Il fallimento dei Germa",
+   "16": "Non qui",
+   "17": "Bugiardo",
+   "18": "Torre",
+   "19": "Piano per assassinare l'Imperatore",
+   "20": "Attore veterano",
+   "21": "L'onorevole",
+   "22": "Ehi, mamma",
+   "23": "BUON COMPLEANNO",
+   "24": "Sotto assedio",
+   "25": "Ce la puoi fare, Caesar!!",
+   "26": "Diventa mio servitore",
+   "27": "L'onore di una donna",
+   "28": "Il Mink Pedro, capitano dei Guardiani",
+   "29": "Fuga da zero",
+   "30": "Stanza delle onde",
+   "31": "Merienda",
+   "32": "Modo di vivere",
+   "33": "Leone",
+   "34": "Mamma sconosciuta",
+   "35": "Credono in me",
+   "36": "Il pirata Luffy contro il comandante Katakuri",
+   "37": "Un'ultima cosa",
+   "38": "MUSICAL DEL FINALE TRISTE",
+   "39": "TITOLI DI CODA"
+  }
+ },
+ {
+  "name": "Reverie",
+  "listId": "RLz2BXe7",
+  "titles": {
+   "1": "Il quinto Imperatore",
+   "2": "Un mondo bellissimo",
+   "3": "Il trono vuoto"
+  }
+ },
+ {
+  "name": "Wano",
+  "listId": "pFSu2BLb",
+  "titles": {
+   "1": "Avanti verso Wano",
+   "2": "Seppuku",
+   "3": "Villaggio di Amigasa",
+   "4": "Tsuru ricambia il favore",
+   "5": "Città di Okobore",
+   "6": "Il grande torneo di sumo di Wano",
+   "7": "La nave dei rifornimenti",
+   "8": "Le rovine del castello di Oden",
+   "9": "Amo Oden",
+   "10": "Shutenmaru",
+   "11": "L'Imperatore Kaido contro Luffy",
+   "12": "Hah",
+   "13": "Vuoto",
+   "14": "Otoko la kamuro",
+   "15": "Arriva l'oiran Komurasaki",
+   "16": "Maschera Soba",
+   "17": "Lo shogun e l'oiran",
+   "18": "Hyogoro il Fiore",
+   "19": "Gyukimaru del Ponte dei Banditi",
+   "20": "Il segreto di una donna",
+   "21": "Scintille di ribellione",
+   "22": "Shimotsuki Yasuie, il daimyo di Hakumai",
+   "23": "SMILE",
+   "24": "Olin",
+   "25": "Queen contro Olin",
+   "26": "Mummia",
+   "27": "Il sogno di un soldato",
+   "28": "FURIA",
+   "29": "Una volta volpe",
+   "30": "Enma",
+   "31": "Grandi notizie",
+   "32": "Definitivo",
+   "33": "Il porto designato",
+   "34": "Il giorno del dio della montagna",
+   "35": "Daimyo e vassalli",
+   "36": "L'avventura di Oden",
+   "37": "Roger e Barbabianca",
+   "38": "L'avventura di Roger",
+   "39": "Il folle signore",
+   "40": "Oden era destinato a bollire",
+   "41": "Il clan Kozuki",
+   "42": "L'astuto stratagemma di Kin'emon",
+   "43": "La festa è finita!!!",
+   "44": "Una questione di famiglia",
+   "45": "Musica da combattimento",
+   "46": "Tuono",
+   "47": "La mia Bibbia",
+   "48": "Vassalli di gloria",
+   "49": "Non riesco a immaginare di perdere",
+   "50": "Esercito di uno",
+   "51": "Resti",
+   "52": "Il giuramento di una kunoichi",
+   "53": "Nuvole di fiamma",
+   "54": "Il sake che ho fatto per bere con te",
+   "55": "Cappello di Paglia Luffy",
+   "56": "Battaglia di mostri su Onigashima",
+   "57": "Gnocchi di miglio",
+   "58": "L'onorevole Hyogoro “il Fiore”",
+   "59": "Il capo dei ladri del Monte Atama, Ashura Doji",
+   "60": "Haki del Re",
+   "61": "Il codice del dolce di fagioli",
+   "62": "Anarchia nel BM (Big Mom)"
+  }
+ },
+ {
+  "name": "Egghead",
+  "listId": "87XoYXT9",
+  "titles": {
+   "1": "Nuovi Imperatori",
+   "2": "Il caso riguardante il capitano Koby",
+   "3": "L'isola del futuro Egghead",
+   "4": "Avventura nella terra della scienza",
+   "5": "I sei Vegapunk",
+   "6": "La volontà di Ohara",
+   "7": "Punk Records",
+   "8": "La forma più forte dell'umanità",
+   "9": "Il peso della memoria",
+   "10": "Miss Buckingham Stussy",
+   "11": "Gioco mortale della Labophase",
+   "12": "Limite di fuga",
+   "13": "La ciurma dell'Imperatore, i Pirati di Rosso",
+   "14": "L'eroe leggendario",
+   "15": "Andiamo a prenderlo!!",
+   "16": "Il tentato omicidio di un Drago Celeste",
+   "17": "I Cinque Anziani",
+   "18": "L'ultima lezione",
+   "19": "Presa di ostaggi",
+   "20": "Sentomaru",
+   "21": "Luffy contro Kizaru",
+   "22": "Kuma Orso"
+  }
+ }
 ]
