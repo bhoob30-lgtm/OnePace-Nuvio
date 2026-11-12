@@ -3,6 +3,9 @@
 const ARCS = require("./arcs.json");
 
 const PIXELDRAIN = process.env.PIXELDRAIN_URL || "https://pixeldrain.com";
+// Indirizzo usato dal PLAYER per riprodurre i video (può essere diverso da quello usato dal server per leggere le liste).
+// Se un dispositivo non riesce a risolvere pixeldrain.com, imposta PIXELDRAIN_STREAM_URL=https://pixeldrain.net
+const STREAM_HOST = process.env.PIXELDRAIN_STREAM_URL || PIXELDRAIN;
 const CACHE_MS = 60 * 60 * 1000; // 1 ora
 // ID della serie. Per provare l'aggancio a TMDB (locandine delle stagioni in Nuvio) imposta SERIES_ID=tmdb:318774
 const SERIES_ID = process.env.SERIES_ID || "onepace";
@@ -27,7 +30,12 @@ const BACKGROUND = process.env.BACKGROUND_URL || `https://images.metahub.space/b
 const LOGO = process.env.LOGO_URL || `https://images.metahub.space/logo/medium/${IMDB_ID}/img`;
 
 // Per usare un fotogramma del video come miniatura invece della copertina dell'arco: THUMBNAILS=video
-const USE_VIDEO_FRAMES = process.env.THUMBNAILS === "video";
+// Miniature degli episodi: THUMBNAILS=site (predefinito, immagini di onepace.net), cover (copertine dell'arco) o video (fotogramma da Pixeldrain)
+const THUMBS = process.env.THUMBNAILS || "site";
+const USE_VIDEO_FRAMES = THUMBS === "video";
+const SITE = process.env.SITE_URL || "https://onepace.net";
+let STILLS = {};
+try { STILLS = require("./stills.json"); } catch (e) { /* senza stills.json si usano le copertine */ }
 
 const cache = { at: 0, data: null, pending: null };
 
@@ -75,8 +83,11 @@ async function loadArc(arc, season) {
     const custom = arc.titles && (Array.isArray(arc.titles) ? arc.titles[ep - 1] : arc.titles[ep]);
     const num = String(ep).padStart(2, "0");
     // copertina: quella dell'arco se impostata, altrimenti un fotogramma del video da Pixeldrain
-    const thumbnail = arc.thumbnail || (USE_VIDEO_FRAMES
-      ? `${PIXELDRAIN}/api/file/${groups[ep][0].id}/thumbnail`
+    const still = THUMBS === "site" && STILLS[arc.name.toLowerCase()] && STILLS[arc.name.toLowerCase()][ep];
+    const thumbnail = arc.thumbnail || (still
+      ? `${SITE}/_next/image?url=${encodeURIComponent(still)}&w=1080&q=75` // immagine dell'episodio dal sito
+      : USE_VIDEO_FRAMES
+      ? `${STREAM_HOST}/api/file/${groups[ep][0].id}/thumbnail`
       : `/covers/${String(season).padStart(2, "0")}.jpg`); // copertina dell'arco (file in public/covers)
     videos.push({
       id: vid, season, episode: ep,
@@ -134,7 +145,7 @@ async function handle(pathname, base) {
       streams: (byId[id] || []).map((f) => ({
         name: `One Pace\n${f.quality || "HD"}`,
         title: `${f.name}${f.extra.length ? "\n" + f.extra.join(" · ") : ""}`,
-        url: `${PIXELDRAIN}/api/file/${f.id}`,
+        url: `${STREAM_HOST}/api/file/${f.id}`,
         behaviorHints: { notWebReady: false, bingeGroup: "onepace" },
       })),
     };
